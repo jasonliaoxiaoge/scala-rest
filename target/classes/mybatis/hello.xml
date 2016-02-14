@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xg.app.dao.HelloMapper">
+
+	<resultMap type="helloDo" id="helloMap">
+		<result property="id" column="id" />
+		<result property="value" column="value" />
+	</resultMap>
+
+	<select id="getAll" resultType="helloDo" resultMap="helloMap">
+		<![CDATA[
+			select * from hello
+		]]>
+	</select>
+
+</mapper>

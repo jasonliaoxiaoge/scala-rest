@@ -1,0 +1,5 @@
+CREATE TABLE  `hello` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `value` varchar(128) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
